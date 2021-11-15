@@ -1,0 +1,181 @@
+@charset "UTF-8";
+* {
+  font-family: '微軟正黑體';
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 12px;
+}
+
+.container {
+  min-width: 1433px;
+}
+
+.container .popup .popup-content .main-content .game-summary {
+  width: 100%;
+  height: 260px;
+  position: relative;
+}
+
+.container .popup .popup-content .main-content .game-summary img {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: -90px;
+  left: 0;
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.container .popup .popup-content .main-content .game-summary .game-summary-text {
+  width: 700px;
+  height: 230px;
+  margin-left: auto;
+}
+
+.container .popup .popup-content .main-content .game-summary .game-summary-text h1 {
+  margin: 33px 0 30px 0;
+}
+
+.container .popup .popup-content .main-content .game-summary .game-summary-text h3 {
+  margin: 0 0 30px 0;
+  font-weight: unset;
+}
+
+.container .popup .popup-content .main-content .game-summary .game-summary-text .call-to-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .popup .popup-content .main-content .game-summary .game-summary-text .call-to-action h2 {
+  margin: 0;
+  color: #EF3674;
+}
+
+.container .popup .popup-content .main-content .game-summary .game-summary-text .call-to-action .call-to-action-btn-ring {
+  width: 208px;
+  height: 48px;
+  border: 2px solid #4E86D4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .popup .popup-content .main-content .game-summary .game-summary-text .call-to-action .call-to-action-btn-ring .call-to-action-btn {
+  width: 200px;
+  height: 40px;
+  background-color: #4E86D4;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container .popup .popup-content .main-content .game-summary .game-summary-text .call-to-action .call-to-action-btn-ring .call-to-action-btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.container .popup .popup-content .main-content .game-summary .game-summary-text .call-to-action .call-to-action-btn-ring .call-to-action-btn a h3 {
+  color: aliceblue;
+  margin: 0;
+  font-weight: bold;
+}
+
+.container .popup .popup-content .main-content .game-summary .game-summary-text .call-to-action .call-to-action-btn-ring .call-to-action-btn:hover {
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 140, 255, 0.685);
+          box-shadow: 0px 0px 25px rgba(0, 140, 255, 0.685);
+}
+
+.container .popup .popup-content .main-content .game-photo {
+  padding-top: 80px;
+}
+
+.container .popup .popup-content .main-content .game-photo .glide__slides {
+  overflow: visible;
+}
+
+.container .popup .popup-content .main-content .game-photo .glide__slides .glide__slide {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  opacity: 0.7;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.container .popup .popup-content .main-content .game-photo .glide__slides .glide__slide img {
+  width: 100%;
+}
+
+.container .popup .popup-content .main-content .game-photo .glide__slides .glide__slide--active {
+  opacity: 1;
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.container .popup .popup-content .main-content .game-photo .glide__arrow {
+  color: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container .popup .popup-content .main-content .game-photo .glide__arrow:hover {
+  color: #4E86D4;
+  border: 2px solid #4E86D4;
+}
+
+.container .popup .popup-content .main-content .game-introduction {
+  padding: 0 110px;
+}
+
+.container .popup .popup-content .main-content .game-introduction h2 {
+  margin-top: 80px;
+  margin-bottom: 25px;
+  color: #EF3674;
+}
+
+.container .popup .popup-content .main-content .game-introduction h3 {
+  margin: 0;
+}
+/*# sourceMappingURL=content.css.map */

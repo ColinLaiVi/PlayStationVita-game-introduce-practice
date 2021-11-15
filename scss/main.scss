@@ -1,0 +1,54 @@
+.container {
+    .psv-box {
+        width: 100%;
+        padding-top: 158px;
+        display: flex;
+        justify-content: center;
+
+        .psv-box-inner {
+            position: relative;
+
+            .psv {
+                width: 1433px;
+                height: 806px;
+            }
+
+            .show-btn-box {
+                position: absolute;
+                top: 202px;
+                left: 468px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .btn-1, .btn-2, .btn-3, .btn-4 {
+                    text-align: center;
+                    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+                    cursor: pointer;
+                    opacity: 0.8;
+                    transition: opacity 0.3s;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+    
+                    img {
+                        width: 129px;
+                        height: 129px;
+                        border-radius: 50%;
+                        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+                    }
+    
+                    h5 {
+                        margin: 0;
+                        color: aliceblue
+                    }
+                }
+
+                .btn-4 {
+                    flex-basis: 62.5%;
+                }
+            }
+        }
+    }
+}

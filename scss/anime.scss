@@ -1,0 +1,141 @@
+$duration:8s;
+$linear:linear;
+
+.circle-box1 {
+	width: calc(100% - 160px);
+	height: 1px;
+	position: absolute;
+	top: 250px;
+	z-index: 99;
+}
+
+.circle-box2 {
+	width: calc(100% - 160px);
+	height: 1px;
+	position: absolute;
+	top: 500px;
+	z-index: 99;
+}
+
+.circle-center{
+	width:1px;
+	height:1px;
+	position: absolute;
+	animation: run 3s forwards;
+
+	.circle-info{
+		width:100px;
+		height:50px;
+		border: 1px solid aliceblue;
+		opacity:0.5;
+		background-image:url(../img/OK.png);
+		background-size:contain;
+		background-position:center;
+		position:absolute;
+		bottom:0;
+		left:50%;
+		transform:translate(-50%, 50%);
+		z-index: 100;
+	}
+
+	.circle{
+		position:absolute;
+		left:50%;
+		transform:translateX(-50%);
+	}
+
+	@for $i from 1 through 8{
+		.circle:nth-child(#{$i}){
+			$size:0;
+			@if($i > 1){
+				$size:20px * ($i - 1);
+				border:10px solid;
+			}@else{
+				$size:20px;
+				background:rgba(73, 188, 255, 0.6);
+			}
+			bottom:0;
+			transform-origin:bottom center;
+			border-bottom:none;
+			border-radius:$size $size 0 0;
+			width:$size;
+			height:$size / 2;
+			z-index: 16 - $i;
+			animation:circle-#{$i} $duration infinite $linear;
+		}
+		@keyframes circle-#{$i}{
+			0%{transform:translateX(-50%) rotate(0deg);}
+			50%{opacity: 0.3;}
+			100%{transform:translateX(-50%) rotate(-($i * 360deg));}
+		}
+	}
+
+	@for $i from 9 through 16{
+		.circle:nth-child(#{$i}){
+			$size:0;
+			$size:20px * ($i - 1);
+			border:15px solid;
+			top:100%;
+			transform-origin:top center;
+			border-top:none;
+			border-radius:0 0 $size $size;
+			width:$size;
+			height:$size / 2;
+			z-index: 16 - $i;
+			animation:circle-#{$i} $duration infinite $linear;
+		}
+		@keyframes circle-#{$i}{
+			0%{transform:translateX(-50%) rotate(0deg);}
+			50%{opacity: 0.1;}
+			100%{transform:translateX(-50%) rotate(($i * 360deg));}
+		}
+	}
+	.circle:nth-child(even){
+		border-color:rgb(98, 0, 255);
+	}
+	.circle:nth-child(odd){
+		border-color:rgba(73, 188, 255, 0.6);
+	}
+}
+
+@keyframes run {
+	0%{left: -160px;}
+	75%{
+		top: 0;
+		left: 100%;
+		opacity: 1;
+	}
+	99%{
+		top: 100px;
+		left: 100%;
+		opacity: 0;
+		overflow: unset;
+	}
+	100%{
+		width: 0;
+		height: 0;
+		overflow: hidden;
+	} 
+}
+
+@media screen and (max-width: 1400px) {
+	@keyframes run {
+		0%{left: 0;}
+		75%{
+			top: 0;
+			left: calc(100% - 160px);
+			opacity: 1;
+		}
+		99%{
+			top: 100px;
+			left: calc(100% - 160px);
+			opacity: 0;
+			overflow: unset;
+		}
+		100%{
+			width: 0;
+			height: 0;
+			overflow: hidden;
+		} 
+	}
+}

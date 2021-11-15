@@ -1,0 +1,338 @@
+$orange: #EA9B0F;
+$orange-lighter: #ffd07e;
+$gray: #998C81;
+
+header {
+    .logo {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        display: flex;
+        align-items: center;
+        gap: 38px;
+
+        .play-station {
+            width: 227px;
+            height: 48px;
+        }
+
+        .sword {
+            width: 275px;
+            height: 39px;
+        }
+    }
+
+    nav {
+        position: fixed;
+        top: 55%;
+        left: 90px;
+        transform: translateY(-50%);
+        z-index: 95;
+
+        .production-team {
+            display: flex;
+            align-items: center;
+            height: 168px;
+
+            .production-team-btn {
+                cursor: pointer;
+
+                .btn-ring {
+                    width: 83px;
+                    height: 83px;
+                    border: 2px solid $gray;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    .pt-btn {
+                        width: 75px;
+                        height: 75px;
+                        background-color: $gray;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+    
+                        .pt-btn-img {
+                            width: 45px;
+                            height: 45px;
+                            background-image: url(../img/header-nav/製作團隊2.png);
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                }
+    
+                &:hover .btn-ring {
+                    border: 2px solid #EA9B0F !important;
+                }
+    
+                &:hover .pt-btn {
+                    background-color: #EA9B0F !important;
+                    box-shadow: 0px 0px 20px $orange-lighter !important;
+                }
+    
+                &:hover .pt-btn-img {
+                    background-image: url(../img/header-nav/製作團隊.png) !important;
+                }
+
+                &:focus .btn-ring {
+                    border: 2px solid #EA9B0F !important;
+                }
+    
+                &:focus .pt-btn {
+                    background-color: #EA9B0F !important;
+                    box-shadow: 0px 0px 20px $orange-lighter !important;
+                }
+    
+                &:focus .pt-btn-img {
+                    background-image: url(../img/header-nav/製作團隊.png) !important;
+                }
+
+                &:focus + .production-team-content {
+                    display: block;
+                }
+            }
+
+            .production-team-content {
+                display: none;
+            }
+
+            .production-team-content:hover {
+                display: block;
+            }
+        }
+
+        .original-introduction {
+            display: flex;
+            align-items: center;
+            height: 168px;
+
+            .original-introduction-btn {
+                cursor: pointer;
+
+                .btn-ring {
+                    width: 83px;
+                    height: 83px;
+                    border: 2px solid $gray;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .oi-btn {
+                        width: 75px;
+                        height: 75px;
+                        background-color: $gray;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .oi-btn-img {
+                            width: 45px;
+                            height: 45px;
+                            background-image: url(../img/header-nav/原作介紹2.png);
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                }
+                
+                &:hover .btn-ring {
+                    border: 2px solid #EA9B0F !important;
+                }
+    
+                &:hover .oi-btn {
+                    background-color: #EA9B0F !important;
+                    box-shadow: 0px 0px 20px $orange-lighter !important;
+                }
+    
+                &:hover .oi-btn-img {
+                    background-image: url(../img/header-nav/原作介紹.png) !important;
+                }
+    
+                &:focus .btn-ring {
+                    border: 2px solid #EA9B0F !important;
+                }
+    
+                &:focus .oi-btn {
+                    background-color: #EA9B0F !important;
+                    box-shadow: 0px 0px 20px $orange-lighter !important;
+                }
+    
+                &:focus .oi-btn-img {
+                    background-image: url(../img/header-nav/原作介紹.png) !important;
+                }
+    
+                &:focus + .original-introduction-content {
+                    display: block;
+                }
+            }
+
+            .original-introduction-content {
+                display: none;
+            }
+
+            .original-introduction-content:hover {
+                display: block;
+            }
+        }
+
+        .friends-site-link {
+            display: flex;
+            align-items: center;
+            height: 168px;
+
+            .friends-site-link-btn {
+                cursor: pointer;
+
+                .btn-ring {
+                    width: 83px;
+                    height: 83px;
+                    border: 2px solid $gray;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .fsl-btn {
+                        width: 75px;
+                        height: 75px;
+                        background-color: $gray;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .fsl-btn-img {
+                            width: 45px;
+                            height: 45px;
+                            background-image: url(../img/header-nav/友站連結2.png);
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                }
+
+                &:hover .btn-ring {
+                    border: 2px solid #EA9B0F !important;
+                }
+    
+                &:hover .fsl-btn {
+                    background-color: #EA9B0F !important;
+                    box-shadow: 0px 0px 20px $orange-lighter !important;
+                }
+    
+                &:hover .fsl-btn-img {
+                    background-image: url(../img/header-nav/友站連結.png) !important;
+                }
+
+                &:focus .btn-ring {
+                    border: 2px solid #EA9B0F !important;
+                }
+    
+                &:focus .fsl-btn {
+                    background-color: #EA9B0F !important;
+                    box-shadow: 0px 0px 20px $orange-lighter !important;
+                }
+    
+                &:focus .fsl-btn-img {
+                    background-image: url(../img/header-nav/友站連結.png) !important;
+                }
+    
+                &:focus + .friends-site-link-content {
+                    display: block;
+                }
+            }
+
+            .friends-site-link-content {
+                display: none;
+            }
+
+            .friends-site-link-content:hover {
+                display: block;
+            }
+        }
+    }
+}
+
+.menu {
+	border: 1px solid;
+    border-image: linear-gradient(to top, transparent, #f9f9f9 20%, #f9f9f9 80%, transparent) 0 0 0 1;
+	margin-left: 30px;
+	display: inline-block;
+
+    .menu-list {
+        list-style-type: none;
+        margin: 0 5px;
+        padding: 0;
+        position: relative;
+
+        .menu-list-item {
+            background-color: #f9f9f9;
+            color: #494748;
+            margin-bottom: 5px;
+
+            a {
+                display: inline-block;
+                padding: 15px 25px;
+                text-decoration: none;
+                color: #494748;
+
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+        
+        .menu-list-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .menu-list-item:hover {
+            cursor: pointer;
+            background-color: #eda60c;
+            color: #f9f9f9;
+
+            a {
+                color: #f9f9f9;
+            }
+        }
+    }
+    
+    .menu-list:before {
+        position: absolute;
+        content: '';
+        border-right: 25px solid #f9f9f9;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        left: -30px;
+        top: calc(50% - 10px);
+    }
+    
+    .menu-list:after {
+        position: absolute;
+        content: '';
+        border: 3px solid #333;
+        border-radius: 50%;
+        left: -15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+
+    h4 {
+        margin-top: 1000px;
+    }
+}

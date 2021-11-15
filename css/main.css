@@ -1,0 +1,65 @@
+.container .psv-box {
+  width: 100%;
+  padding-top: 158px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .psv-box .psv-box-inner {
+  position: relative;
+}
+
+.container .psv-box .psv-box-inner .psv {
+  width: 1433px;
+  height: 806px;
+}
+
+.container .psv-box .psv-box-inner .show-btn-box {
+  position: absolute;
+  top: 202px;
+  left: 468px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .psv-box .psv-box-inner .show-btn-box .btn-1, .container .psv-box .psv-box-inner .show-btn-box .btn-2, .container .psv-box .psv-box-inner .show-btn-box .btn-3, .container .psv-box .psv-box-inner .show-btn-box .btn-4 {
+  text-align: center;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.container .psv-box .psv-box-inner .show-btn-box .btn-1:hover, .container .psv-box .psv-box-inner .show-btn-box .btn-2:hover, .container .psv-box .psv-box-inner .show-btn-box .btn-3:hover, .container .psv-box .psv-box-inner .show-btn-box .btn-4:hover {
+  opacity: 1;
+}
+
+.container .psv-box .psv-box-inner .show-btn-box .btn-1 img, .container .psv-box .psv-box-inner .show-btn-box .btn-2 img, .container .psv-box .psv-box-inner .show-btn-box .btn-3 img, .container .psv-box .psv-box-inner .show-btn-box .btn-4 img {
+  width: 129px;
+  height: 129px;
+  border-radius: 50%;
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.container .psv-box .psv-box-inner .show-btn-box .btn-1 h5, .container .psv-box .psv-box-inner .show-btn-box .btn-2 h5, .container .psv-box .psv-box-inner .show-btn-box .btn-3 h5, .container .psv-box .psv-box-inner .show-btn-box .btn-4 h5 {
+  margin: 0;
+  color: aliceblue;
+}
+
+.container .psv-box .psv-box-inner .show-btn-box .btn-4 {
+  -ms-flex-preferred-size: 62.5%;
+      flex-basis: 62.5%;
+}
+/*# sourceMappingURL=main.css.map */

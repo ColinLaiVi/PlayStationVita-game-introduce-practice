@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 1433px;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+
+    .popup {
+        position: absolute;
+        top: 240px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -100;
+        opacity: 0;
+
+        .popup-content {
+            padding: 0 160px;
+            width: 1400px;
+            height: 0px;
+            overflow: hidden;
+            background-color: #FFFFFF;
+            background-image: url(../img/科技.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 1px solid black;
+            margin-bottom: 180px;
+            position: relative;
+            opacity: 0;
+            transition: opacity 1.5s, height 2.5s;
+
+            .close-btn-ring {
+                width: 54px;
+                height: 54px;
+                border-radius: 27px;
+                border: 2px solid #D16574;
+                position: absolute;
+                top: -69px;
+                right: 160px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .close-btn {
+                width: 46px;
+                height: 46px;
+                border-radius: 23px;
+                background-color: #D16574;
+                transition: 0.3s;
+                cursor: pointer;
+
+                &:hover {
+                    box-shadow: 0px 0px 20px rgba(255, 212, 218, 0.801);
+                }
+
+                span {
+                    width: 30px;
+                    height: 2px;
+                    background-color: aliceblue;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                }
+
+                .cross-line1 {
+                    transform: translate(-50%, -50%) rotate(45deg);
+                }
+
+                .cross-line2 {
+                    transform: translate(-50%, -50%) rotate(-45deg);
+                }
+            }
+        }
+
+        .popup-content-show {
+            height: 1600px;
+            opacity: 1;
+            overflow: unset;
+        }
+    }
+
+    .show {
+        z-index: 100;
+        opacity: 1;
+    }
+}

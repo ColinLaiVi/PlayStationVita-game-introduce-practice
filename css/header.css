@@ -1,0 +1,396 @@
+@charset "UTF-8";
+header .logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 38px;
+}
+
+header .logo .play-station {
+  width: 227px;
+  height: 48px;
+}
+
+header .logo .sword {
+  width: 275px;
+  height: 39px;
+}
+
+header nav {
+  position: fixed;
+  top: 55%;
+  left: 90px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 95;
+}
+
+header nav .production-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 168px;
+}
+
+header nav .production-team .production-team-btn {
+  cursor: pointer;
+}
+
+header nav .production-team .production-team-btn .btn-ring {
+  width: 83px;
+  height: 83px;
+  border: 2px solid #998C81;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .production-team .production-team-btn .btn-ring .pt-btn {
+  width: 75px;
+  height: 75px;
+  background-color: #998C81;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .production-team .production-team-btn .btn-ring .pt-btn .pt-btn-img {
+  width: 45px;
+  height: 45px;
+  background-image: url(../img/header-nav/製作團隊2.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+header nav .production-team .production-team-btn:hover .btn-ring {
+  border: 2px solid #EA9B0F !important;
+}
+
+header nav .production-team .production-team-btn:hover .pt-btn {
+  background-color: #EA9B0F !important;
+  -webkit-box-shadow: 0px 0px 20px #ffd07e !important;
+          box-shadow: 0px 0px 20px #ffd07e !important;
+}
+
+header nav .production-team .production-team-btn:hover .pt-btn-img {
+  background-image: url(../img/header-nav/製作團隊.png) !important;
+}
+
+header nav .production-team .production-team-btn:focus .btn-ring {
+  border: 2px solid #EA9B0F !important;
+}
+
+header nav .production-team .production-team-btn:focus .pt-btn {
+  background-color: #EA9B0F !important;
+  -webkit-box-shadow: 0px 0px 20px #ffd07e !important;
+          box-shadow: 0px 0px 20px #ffd07e !important;
+}
+
+header nav .production-team .production-team-btn:focus .pt-btn-img {
+  background-image: url(../img/header-nav/製作團隊.png) !important;
+}
+
+header nav .production-team .production-team-btn:focus + .production-team-content {
+  display: block;
+}
+
+header nav .production-team .production-team-content {
+  display: none;
+}
+
+header nav .production-team .production-team-content:hover {
+  display: block;
+}
+
+header nav .original-introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 168px;
+}
+
+header nav .original-introduction .original-introduction-btn {
+  cursor: pointer;
+}
+
+header nav .original-introduction .original-introduction-btn .btn-ring {
+  width: 83px;
+  height: 83px;
+  border: 2px solid #998C81;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .original-introduction .original-introduction-btn .btn-ring .oi-btn {
+  width: 75px;
+  height: 75px;
+  background-color: #998C81;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .original-introduction .original-introduction-btn .btn-ring .oi-btn .oi-btn-img {
+  width: 45px;
+  height: 45px;
+  background-image: url(../img/header-nav/原作介紹2.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+header nav .original-introduction .original-introduction-btn:hover .btn-ring {
+  border: 2px solid #EA9B0F !important;
+}
+
+header nav .original-introduction .original-introduction-btn:hover .oi-btn {
+  background-color: #EA9B0F !important;
+  -webkit-box-shadow: 0px 0px 20px #ffd07e !important;
+          box-shadow: 0px 0px 20px #ffd07e !important;
+}
+
+header nav .original-introduction .original-introduction-btn:hover .oi-btn-img {
+  background-image: url(../img/header-nav/原作介紹.png) !important;
+}
+
+header nav .original-introduction .original-introduction-btn:focus .btn-ring {
+  border: 2px solid #EA9B0F !important;
+}
+
+header nav .original-introduction .original-introduction-btn:focus .oi-btn {
+  background-color: #EA9B0F !important;
+  -webkit-box-shadow: 0px 0px 20px #ffd07e !important;
+          box-shadow: 0px 0px 20px #ffd07e !important;
+}
+
+header nav .original-introduction .original-introduction-btn:focus .oi-btn-img {
+  background-image: url(../img/header-nav/原作介紹.png) !important;
+}
+
+header nav .original-introduction .original-introduction-btn:focus + .original-introduction-content {
+  display: block;
+}
+
+header nav .original-introduction .original-introduction-content {
+  display: none;
+}
+
+header nav .original-introduction .original-introduction-content:hover {
+  display: block;
+}
+
+header nav .friends-site-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 168px;
+}
+
+header nav .friends-site-link .friends-site-link-btn {
+  cursor: pointer;
+}
+
+header nav .friends-site-link .friends-site-link-btn .btn-ring {
+  width: 83px;
+  height: 83px;
+  border: 2px solid #998C81;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .friends-site-link .friends-site-link-btn .btn-ring .fsl-btn {
+  width: 75px;
+  height: 75px;
+  background-color: #998C81;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .friends-site-link .friends-site-link-btn .btn-ring .fsl-btn .fsl-btn-img {
+  width: 45px;
+  height: 45px;
+  background-image: url(../img/header-nav/友站連結2.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+header nav .friends-site-link .friends-site-link-btn:hover .btn-ring {
+  border: 2px solid #EA9B0F !important;
+}
+
+header nav .friends-site-link .friends-site-link-btn:hover .fsl-btn {
+  background-color: #EA9B0F !important;
+  -webkit-box-shadow: 0px 0px 20px #ffd07e !important;
+          box-shadow: 0px 0px 20px #ffd07e !important;
+}
+
+header nav .friends-site-link .friends-site-link-btn:hover .fsl-btn-img {
+  background-image: url(../img/header-nav/友站連結.png) !important;
+}
+
+header nav .friends-site-link .friends-site-link-btn:focus .btn-ring {
+  border: 2px solid #EA9B0F !important;
+}
+
+header nav .friends-site-link .friends-site-link-btn:focus .fsl-btn {
+  background-color: #EA9B0F !important;
+  -webkit-box-shadow: 0px 0px 20px #ffd07e !important;
+          box-shadow: 0px 0px 20px #ffd07e !important;
+}
+
+header nav .friends-site-link .friends-site-link-btn:focus .fsl-btn-img {
+  background-image: url(../img/header-nav/友站連結.png) !important;
+}
+
+header nav .friends-site-link .friends-site-link-btn:focus + .friends-site-link-content {
+  display: block;
+}
+
+header nav .friends-site-link .friends-site-link-content {
+  display: none;
+}
+
+header nav .friends-site-link .friends-site-link-content:hover {
+  display: block;
+}
+
+.menu {
+  border: 1px solid;
+  -o-border-image: linear-gradient(to top, transparent, #f9f9f9 20%, #f9f9f9 80%, transparent) 0 0 0 1;
+     border-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(20%, #f9f9f9), color-stop(80%, #f9f9f9), to(transparent)) 0 0 0 1;
+     border-image: linear-gradient(to top, transparent, #f9f9f9 20%, #f9f9f9 80%, transparent) 0 0 0 1;
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.menu .menu-list {
+  list-style-type: none;
+  margin: 0 5px;
+  padding: 0;
+  position: relative;
+}
+
+.menu .menu-list .menu-list-item {
+  background-color: #f9f9f9;
+  color: #494748;
+  margin-bottom: 5px;
+}
+
+.menu .menu-list .menu-list-item a {
+  display: inline-block;
+  padding: 15px 25px;
+  text-decoration: none;
+  color: #494748;
+}
+
+.menu .menu-list .menu-list-item a i {
+  margin-right: 5px;
+}
+
+.menu .menu-list .menu-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.menu .menu-list .menu-list-item:hover {
+  cursor: pointer;
+  background-color: #eda60c;
+  color: #f9f9f9;
+}
+
+.menu .menu-list .menu-list-item:hover a {
+  color: #f9f9f9;
+}
+
+.menu .menu-list:before {
+  position: absolute;
+  content: '';
+  border-right: 25px solid #f9f9f9;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  left: -30px;
+  top: calc(50% - 10px);
+}
+
+.menu .menu-list:after {
+  position: absolute;
+  content: '';
+  border: 3px solid #333;
+  border-radius: 50%;
+  left: -15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  color: aliceblue;
+}
+
+footer h4 {
+  margin-top: 1000px;
+}
+/*# sourceMappingURL=header.css.map */

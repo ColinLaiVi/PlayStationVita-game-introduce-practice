@@ -1,0 +1,108 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-width: 1433px;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.container .popup {
+  position: absolute;
+  top: 240px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -100;
+  opacity: 0;
+}
+
+.container .popup .popup-content {
+  padding: 0 160px;
+  width: 1400px;
+  height: 0px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  background-image: url(../img/科技.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  margin-bottom: 180px;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: opacity 1.5s, height 2.5s;
+  transition: opacity 1.5s, height 2.5s;
+}
+
+.container .popup .popup-content .close-btn-ring {
+  width: 54px;
+  height: 54px;
+  border-radius: 27px;
+  border: 2px solid #D16574;
+  position: absolute;
+  top: -69px;
+  right: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .popup .popup-content .close-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 23px;
+  background-color: #D16574;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.container .popup .popup-content .close-btn:hover {
+  -webkit-box-shadow: 0px 0px 20px rgba(255, 212, 218, 0.801);
+          box-shadow: 0px 0px 20px rgba(255, 212, 218, 0.801);
+}
+
+.container .popup .popup-content .close-btn span {
+  width: 30px;
+  height: 2px;
+  background-color: aliceblue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.container .popup .popup-content .close-btn .cross-line1 {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.container .popup .popup-content .close-btn .cross-line2 {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.container .popup .popup-content-show {
+  height: 1600px;
+  opacity: 1;
+  overflow: unset;
+}
+
+.container .show {
+  z-index: 100;
+  opacity: 1;
+}
+/*# sourceMappingURL=popup.css.map */
