@@ -23,15 +23,15 @@
         }
     </style>
     <!-- header & footer -->
-    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./scss/header.css">
     <!-- pop-up window -->
-    <link rel="stylesheet" href="./css/popup.css">
+    <link rel="stylesheet" href="./scss/popup.css">
     <!-- Link Start! animation -->
-    <link rel="stylesheet" href="./css/anime.css">
+    <link rel="stylesheet" href="./scss/anime.css">
     <!-- main-content -->
-    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./scss/content.css">
     <!-- index -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./scss/main.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
@@ -46,6 +46,7 @@
         <div class="logo">
             <img class="play-station" src="./img/logo.png" alt="">
             <img class="sword" src="./img/Sword_Art_Online_anime_logo.png" alt="">
+            <h4>© 2021 colinLai 僅供職業訓練教育使用</h4>
         </div>
         <nav>
             <div class="production-team">
@@ -223,13 +224,9 @@
 
                     </div>
                 </div>
-            </div>
+            </div>       
         </div>
     </section>
-
-    <footer>
-        <h4>© 2021 colinLai 僅供職業訓練教育使用</h4>
-    </footer>
 
     <!-- canvas -->
     <script>
@@ -1490,6 +1487,7 @@
 
         // btn-1
         showBtn1.onclick = function () {
+            document.querySelector('body').style.overflowY = 'visible'
             popup.classList.add('show')
             popupContent.classList.add('popup-content-show')
             circleCenterNone.classList.add('circle-center')
@@ -1566,6 +1564,7 @@
 
         // btn-2
         showBtn2.onclick = function () {
+            document.querySelector('body').style.overflowY = 'visible'
             popup.classList.add('show')
             popupContent.classList.add('popup-content-show')
             circleCenterNone.classList.add('circle-center')
@@ -1640,6 +1639,7 @@
 
         // btn-3
         showBtn3.onclick = function () {
+            document.querySelector('body').style.overflowY = 'visible'
             popup.classList.add('show')
             popupContent.classList.add('popup-content-show')
             circleCenterNone.classList.add('circle-center')
@@ -1715,6 +1715,7 @@
 
         // btn-4
         showBtn4.onclick = function () {
+            document.querySelector('body').style.overflowY = 'visible'
             popup.classList.add('show')
             popupContent.classList.add('popup-content-show')
             circleCenterNone.classList.add('circle-center')
@@ -1791,6 +1792,7 @@
 
         // close-btn
         closeBtn.onclick = function () {
+            document.querySelector('body').style.overflow = 'hidden'
             popup.classList.remove('show')
             popupContent.classList.remove('popup-content-show')
             circleCenterNone.classList.remove('circle-center')

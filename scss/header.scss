@@ -20,6 +20,10 @@ header {
             width: 275px;
             height: 39px;
         }
+
+        h4 {
+            color: white;
+        }
     }
 
     nav {
@@ -324,15 +328,5 @@ header {
         left: -15px;
         top: 50%;
         transform: translateY(-50%);
-    }
-}
-
-footer {
-    width: 100%;
-    text-align: center;
-    color: aliceblue;
-
-    h4 {
-        margin-top: 1000px;
     }
 }
